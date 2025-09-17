@@ -38,6 +38,7 @@
     background-color: #123524;
     border-radius: 20px;
     font-size: 12px;
+    align-items: center;
 }
 .contacto h1{
     margin-left: 50px;
