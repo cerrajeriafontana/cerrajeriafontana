@@ -1,0 +1,77 @@
+#zonas {
+  padding: 40px 20px;
+  text-align: center;
+  background: #0d2418;
+}
+
+#zonas h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 40px;
+  animation: scroll 10s linear infinite;
+  white-space: nowrap;
+}
+
+.marquee-content span {
+  font-size: 18px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.contacto{
+    margin-top: 90px;
+    padding: 20px ;
+    background-color: #123524;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.contacto h1{
+    margin-left: 50px;
+    font-size: 18px;
+}
+.contacto p{
+    margin-left: 45px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+nav{
+   
+    margin-left: 35px;
+}
+.titulo{
+    margin-left: -10px;
+}
+.logo{
+    margin-left: -10px;
+}
+header{
+    position: fixed;
+    z-index: 1000;
+    margin-top: -100px;
+}
+#inicio{
+   margin-top: 100px; 
+}
+.titulo1{
+    margin-top: 65px;
+}
+.botoneswhatsapp{
+    text-decoration: none;
+}
+.telefonito{
+    text-decoration: none;
+}

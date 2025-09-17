@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cerrajería Fontana - Cerrajería Profesional 24/7</title>
+  <style>
+    :root{
+      --bg-dark: #0d2418;
+      --bg-card: #123524;
+      --accent: #2ecc71;
+      --accent-dark: #27ae60;
+      --yellow: #fc1e4a;
+      --text: #fff;
+      --muted: #cfd3dc;
+      --radius: 14px;
+      --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box; margin:0; padding:0}
+    body{
+      font-family:var(--font);
+      background:var(--bg-dark);
+      color:var(--text);
+      line-height:1.5;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:16px 20px;
+      background:var(--bg-dark);
+      border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+    .logo{
+      display:flex; align-items:center; gap:10px;
+      font-weight:700; font-size:20px; color:white;
+    }
+    .logo img{
+      height:70px; width:70px; object-fit:contain;
+    }
+    nav a{
+      margin-left:20px; text-decoration:none; color:var(--muted); font-weight:500; font-size:15px;
+    }
+
+    .hero{
+      padding:40px 20px; text-align:center;
+
+    }
+    .hero .card{
+      background:var(--bg-card);
+      border-radius:20px;
+      padding:32px 24px;
+      max-width:600px;
+      margin:0 auto;
+      box-shadow:0 6px 20px rgba(0,0,0,0.4);
+    }
+    .hero h1{
+      font-size:28px; margin-bottom:14px;
+    }
+    .hero p{
+      font-size:17px; color:var(--muted); margin-bottom:20px;
+    }
+    .btn{
+      display:flex; align-items:center; justify-content:center;
+      gap:10px; width:100%; padding:14px;
+      border:none; border-radius:var(--radius);
+      font-weight:600; font-size:16px;
+      cursor:pointer; transition:0.2s;
+    }
+    .btn:hover{opacity:0.9}
+    .btn-call{background:var(--yellow); color:#000; margin-bottom:12px; text-decoration: none;}
+    .btn-whatsapp{background:var(--accent); color:#fff; text-decoration: none;}
+    .btn btn-whatsapp{
+        text-decoration: none;
+    }
+
+    section{
+      padding:40px 20px; max-width:1100px; margin:0 auto;
+    }
+    section h2{
+      font-size:24px; margin-bottom:24px; text-align:center;
+    }
+    .services{
+      display:grid; gap:20px;
+    }
+    .service-card{
+      background:var(--bg-card);
+      border-radius:var(--radius);
+      padding:20px;
+      text-align:center;
+      box-shadow:0 4px 15px rgba(0,0,0,0.3);
+    }
+    .service-card h3{margin-bottom:8px; font-size:18px;}
+    .service-card p{color:var(--muted); font-size:15px;}
+
+    footer{
+      background:#0a1a12; text-align:center; padding:24px; color:var(--muted); font-size:14px;
+    }
+
+    @media(min-width:768px){
+      .hero h1{font-size:34px}
+      .services{grid-template-columns:repeat(3,1fr)}
+      .service-card{text-align:left}
+    }
+  </style>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Proyecto nuevo (1).png" alt="Logo Cerrajería Fontana">
+      <h4  class="titulo">Cerrajería Fontana</h4>
+    </div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#contactanos">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="inicio">
+      <div class="card">
+        <h1>Cerrajería de Urgencia 24hs</h1>
+        <p>Brindamos servicios de cerrajeria del hogar y de automovil las 24hs.</p>
+        <a class="telefonito" href="tel:+5491136035689">
+        <button class="btn btn-call">📞 Llamar (011) 36035689</button>
+        </a>
+        <a class="botoneswhatsapp" href="https://w.app/n13jch" target="_blank" title="Contacto por whatsapp">
+        <button class="btn btn-whatsapp">💬 Whatsapp (011) 36035689</button>
+        </a>
+      </div>
+    </div>
+
+    <section id="servicios">
+      <h2 class="titulo1">Nuestros Servicios</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Apertura de Puertas</h3>
+          <p>Resolvemos aperturas de urgencia de manera rápida y segura.</p>
+        </div>
+        <div class="service-card">
+          <h3>Soluciones de todo tipo</h3>
+          <p>Resolvemos soluciones en torno autos, caja fuerte, puertas blindex y pentagono.</p>
+        </div>
+        <div class="service-card">
+          <h3>Emergencias 24/7</h3>
+          <p id="contactanos">Disponibles en cualquier momento del día o la noche.</p>
+        </div>
+         <div class="contacto" class="card">
+            <h1>Contacto Directo</h1>
+            <p>Ponete en contacto con nosotros rápidamente:</p>
+            <a class="telefonito" href="tel:+5491136035689">
+            <button class="btn btn-call">📞 Llamar (011) 36035689</button>
+            </a>
+            <a  class="botoneswhatsapp" href="https://w.app/n13jch" target="_blank">
+            <button class="btn btn-whatsapp">💬 Whatsapp (011) 36035689</button>
+            </a>
+        </div>
+      </div>
+      <section id="zonas">
+  <h2>Puntos de atención:</h2>
+  <div class="marquee">
+    <div class="marquee-content">
+      <span>📍 CABA</span>
+      <span>📍 Palermo</span>
+      <span>📍 Recoleta</span>
+      <span>📍 Belgrano</span>
+      <span>📍 Núñez</span>
+      <span>📍 San Isidro</span>
+      <span>📍 Vicente López</span>
+      <span>📍 Villa Urquiza</span>
+    </div>
+  </div>
+</section>
+
+    </section>
+  </main>
+
+  <footer id="contacto">
+    © 2025 Cerrajería Fontana - Atención inmediata las 24 horas. <br>
+    Tel: (011) 36035689 · Whatsapp disponible. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
