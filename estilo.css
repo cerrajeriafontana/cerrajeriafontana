@@ -21,7 +21,7 @@ body {
   text-align: center;
 }
 
-/* === HEADER === */
+
 header {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -40,11 +40,11 @@ header {
   font-weight: 700; 
   font-size: 20px; 
   color: white;
-  margin-left: -20px; /* ✅ Ajuste: más hacia la izquierda */
+  margin-left: -20px; 
 }
 .logo img { height: 70px; width: 70px; object-fit: contain; }
 nav {
-  margin-left: 15px; /* nav un poco desplazado en móviles */
+  margin-left: 15px; 
 }
 nav a {
   margin-left: 20px;
@@ -57,7 +57,7 @@ nav a {
 
 #inicio { margin-top: 120px; }
 
-/* === HERO === */
+
 .hero { padding: 40px 20px; text-align: center; }
 .hero .card {
   background: var(--bg-card);
@@ -74,7 +74,7 @@ nav a {
 }
 .hero p { font-size: 17px; color: var(--muted); margin-bottom: 20px; }
 
-/* === BOTONES === */
+
 .btn {
   display: flex; align-items: center; justify-content: center;
   gap: 10px; width: 100%; padding: 14px;
@@ -87,11 +87,11 @@ nav a {
 .btn-whatsapp { background: var(--accent); color: #fff; text-decoration: none; }
 .botoneswhatsapp, .telefonito { text-decoration: none; }
 
-/* === SECCIONES GENERALES === */
+
 section { padding: 40px 20px; max-width: 1100px; margin: 0 auto; }
 section h2 { font-size: 24px; margin-bottom: 24px; text-align: center; }
 
-/* === SERVICIOS === */
+
 .services { display: grid; gap: 20px; }
 .service-card {
   background: var(--bg-card);
@@ -103,7 +103,7 @@ section h2 { font-size: 24px; margin-bottom: 24px; text-align: center; }
 .service-card h3 { margin-bottom: 8px; font-size: 18px; }
 .service-card p { color: var(--muted); font-size: 15px; }
 
-/* === CONTACTO DIRECTO === */
+
 .contacto {
   margin: 40px auto 90px;
   max-width: 600px;
@@ -117,7 +117,7 @@ section h2 { font-size: 24px; margin-bottom: 24px; text-align: center; }
 .contacto h1 { margin-bottom: 10px; font-size: 20px; }
 .contacto p { margin-bottom: 15px; font-size: 16px; }
 
-/* === ZONAS === */
+
 #zonas {
   padding: 40px 20px;
   background: #0d2418;
@@ -144,7 +144,7 @@ section h2 { font-size: 24px; margin-bottom: 24px; text-align: center; }
   100% { transform: translateX(-100%); }
 }
 
-/* === FOOTER === */
+
 footer {
   background: #0a1a12;
   text-align: center;
@@ -153,9 +153,7 @@ footer {
   font-size: 14px;
 }
 
-/* === MEDIA QUERIES === */
 
-/* Celulares a tablet */
 @media (min-width: 768px) {
   .hero h1 { font-size: 34px; }
   .services { grid-template-columns: repeat(2,1fr); }
@@ -164,7 +162,7 @@ footer {
   .contacto h1 { font-size: 22px; }
 }
 
-/* Desktop grande */
+
 @media (min-width:1024px) {
   body { font-size: 18px; }
   .hero h1 { font-size: 42px; }
